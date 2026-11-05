@@ -14,6 +14,7 @@ Start with [current direction](design/direction.md) for decisions, then the [vis
 
 - [Architecture and editing](development/architecture.md): stack, component boundaries, file map, commands, and hosting notes.
 - [Branches, without the mystery](development/branches.md): how the foundation and two experiments share changes.
+- [Verification guide](development/verification.md): build checks and the interactions to inspect in each concept.
 - [Agent guidance](../AGENTS.md): short, durable instructions for coding agents.
 
 ## Evidence and history

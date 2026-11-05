@@ -1,0 +1,512 @@
+.canvas {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 76% 22%, #d9e4ea70, transparent 40%),
+    var(--paper);
+}
+.page {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 55px;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 45px;
+  padding: 74px 0 68px;
+}
+.intro {
+  position: relative;
+  z-index: 2;
+}
+.intro > .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.smallStar {
+  display: inline-block;
+  color: var(--blue);
+  margin-right: 7px;
+  font-size: 15px;
+  vertical-align: middle;
+}
+.intro h1 {
+  position: relative;
+  font-size: clamp(65px, 7.4vw, 101px);
+  line-height: 0.99;
+  font-weight: 550;
+  letter-spacing: -0.075em;
+  margin: 28px 0 28px;
+}
+.intro h1 > span {
+  color: #3c6080;
+}
+.scribble {
+  position: absolute;
+  width: 92px;
+  height: 90px;
+  color: #718fa7;
+  left: 235px;
+  top: -6px;
+  transform: rotate(-8deg);
+}
+.description {
+  max-width: 31ch;
+  color: #3e5260;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 26px;
+}
+.actions > a:last-child {
+  font-size: 12px;
+  color: var(--muted);
+}
+.personalFragment {
+  display: flex;
+  align-items: center;
+  margin: 58px 0 0 7px;
+  gap: 29px;
+}
+.city {
+  width: 178px;
+  flex-shrink: 0;
+  transform: rotate(-6deg);
+}
+.city img {
+  height: 145px;
+  object-position: 58% 50%;
+}
+.city figcaption {
+  font-size: 9px;
+  padding: 9px 1px 11px;
+}
+.city figcaption a {
+  font-size: 8px;
+}
+.sideNote {
+  color: var(--muted);
+  font: 10px/1.7 var(--mono);
+  transform: rotate(2deg);
+}
+.sideNote > span:first-child {
+  font-size: 24px;
+  color: #8199a8;
+  display: inline-block;
+  margin-bottom: 9px;
+}
+.handLine {
+  display: block;
+  width: 80px;
+  height: 7px;
+  margin-top: 12px;
+  border-top: 1px solid #7b92a4;
+  border-radius: 50%;
+  transform: rotate(-4deg);
+}
+.desk {
+  position: relative;
+  min-height: 620px;
+}
+.sky {
+  position: absolute;
+  right: 9px;
+  top: -5px;
+  width: 66%;
+  height: 325px;
+  border: 1px solid #96afc2;
+  border-radius: 7px;
+  overflow: hidden;
+  transform: rotate(3deg);
+  box-shadow: 0 15px 40px #4b6d8712;
+}
+.sky img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 43% center;
+}
+.skyCaption {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  color: #fff;
+  font: 9px var(--mono);
+  padding: 6px 8px;
+  background: #203d577a;
+  border-radius: 3px;
+}
+.index {
+  position: absolute;
+  z-index: 3;
+  width: 207px;
+  top: 50px;
+  left: -34px;
+  transform: rotate(-3deg);
+}
+.index > div {
+  min-height: 32px;
+}
+.index > a {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 13px;
+  min-height: 44px;
+  font-size: 11px;
+  text-decoration: none;
+}
+.index > a:last-child {
+  padding-bottom: 14px;
+}
+.index > a:first-of-type {
+  background: #e0e8ed;
+}
+.index > a:hover {
+  background: #d1e0e9;
+}
+.index > a svg {
+  color: #5d809b;
+}
+.index > a > span:last-child:not(:nth-child(2)) {
+  margin-left: auto;
+  font: 9px var(--mono);
+  color: #5b7281;
+}
+.featured {
+  position: absolute;
+  z-index: 4;
+  top: 244px;
+  left: -21px;
+  width: calc(100% + 4px);
+  transform: rotate(-3deg);
+}
+.featured button {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  transform: none;
+}
+.featured button:hover {
+  background: #f7f6f1;
+}
+.featured button > div {
+  aspect-ratio: 2.1;
+}
+.featured button > span {
+  padding: 22px 24px;
+}
+.featured button > span > span:first-child {
+  font-size: 23px;
+}
+.featured button > span > span:nth-child(2) {
+  max-width: 40ch;
+}
+.featured button > span > span:last-child {
+  margin-top: 13px;
+}
+.deskCaption {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  bottom: -39px;
+  right: 22px;
+  font: 9px var(--mono);
+  color: var(--muted);
+  transform: rotate(-3deg);
+}
+.statusDot {
+  width: 5px;
+  height: 5px;
+  background: #789080;
+  border-radius: 50%;
+}
+.floatingStar {
+  position: absolute;
+  top: 157px;
+  left: 211px;
+  z-index: 5;
+  font-size: 42px;
+  color: #819bae;
+  transform: rotate(13deg);
+}
+.work {
+  padding: 54px 0 65px;
+}
+.work h2 {
+  margin-top: 10px;
+}
+.workGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.workGrid > button {
+  background: transparent;
+}
+.workGrid > button:nth-child(2) {
+  transform: translateY(16px);
+}
+.workGrid > button:nth-child(2):hover {
+  transform: translateY(12px);
+}
+.little {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr 0.78fr;
+  gap: 45px;
+  align-items: center;
+  padding: 30px 0 80px;
+}
+.littleIntro h2 {
+  margin: 14px 0 18px;
+}
+.littleIntro > p:last-child {
+  font-size: 12px;
+  max-width: 28ch;
+  color: var(--muted);
+}
+.collections {
+  display: grid;
+  gap: 18px;
+}
+.bookmarks a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 50px;
+  font-size: 10px;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+.bookmarks a:hover {
+  background: #e3eaf06b;
+}
+.bookmarks a span {
+  font: 9px var(--mono);
+  color: var(--muted);
+}
+.bookmarks a svg {
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.skyPhoto {
+  transform: rotate(5deg);
+}
+.skyPhoto img {
+  height: 200px;
+}
+.skyPhoto figcaption {
+  font-size: 10px;
+}
+@media (min-width: 1270px) {
+  .hero {
+    padding-bottom: 95px;
+  }
+  .deskCaption {
+    bottom: -20px;
+  }
+}
+@media (max-width: 1050px) {
+  .page {
+    padding: 0 35px;
+  }
+  .hero {
+    gap: 25px;
+    padding-top: 60px;
+  }
+  .intro h1 {
+    font-size: 83px;
+  }
+  .scribble {
+    left: 205px;
+    width: 65px;
+  }
+  .personalFragment {
+    gap: 15px;
+  }
+  .sideNote {
+    font-size: 9px;
+  }
+  .city {
+    width: 160px;
+  }
+  .featured {
+    top: 235px;
+  }
+  .featured button > span {
+    padding: 20px;
+  }
+  .deskCaption {
+    bottom: 4px;
+    right: 0;
+  }
+  .little {
+    gap: 25px;
+    grid-template-columns: 1fr 1.25fr;
+  }
+  .skyPhoto {
+    display: none;
+  }
+}
+@media (max-width: 780px) {
+  .page {
+    padding: 0 26px;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 40px 0 20px;
+    gap: 45px;
+  }
+  .intro h1 {
+    font-size: 88px;
+    margin-top: 20px;
+  }
+  .description {
+    font-size: 16px;
+    max-width: 38ch;
+  }
+  .personalFragment {
+    display: none;
+  }
+  .scribble {
+    left: 235px;
+    width: 85px;
+    top: -10px;
+  }
+  .desk {
+    min-height: 630px;
+    margin: 0 15px;
+  }
+  .sky {
+    height: 280px;
+    width: 62%;
+    right: 0;
+  }
+  .index {
+    top: 30px;
+    left: 0;
+  }
+  .featured {
+    top: 210px;
+    left: 0;
+    width: 100%;
+  }
+  .floatingStar {
+    left: 36%;
+    top: 150px;
+  }
+  .deskCaption {
+    bottom: -10px;
+    right: 0;
+  }
+  .work {
+    padding-top: 55px;
+  }
+  .workGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .workGrid > button:first-child {
+    grid-column: 1 / -1;
+  }
+  .workGrid > button:nth-child(2) {
+    transform: none;
+  }
+  .workGrid > button:nth-child(2):hover {
+    transform: translateY(-4px);
+  }
+  .little {
+    padding-bottom: 55px;
+  }
+}
+@media (max-width: 480px) {
+  .page {
+    padding: 0 21px;
+  }
+  .hero {
+    padding-top: 37px;
+  }
+  .intro h1 {
+    font-size: 78px;
+  }
+  .scribble {
+    left: 204px;
+    width: 68px;
+  }
+  .description {
+    font-size: 15px;
+    max-width: 29ch;
+  }
+  .desk {
+    min-height: 545px;
+    margin: 0 5px;
+  }
+  .sky {
+    width: 64%;
+    height: 235px;
+    right: -3px;
+  }
+  .index {
+    width: 170px;
+    left: -5px;
+    top: 35px;
+  }
+  .index > a {
+    font-size: 10px;
+    padding: 9px 10px;
+  }
+  .index > div {
+    padding: 0 10px;
+    gap: 8px;
+  }
+  .featured {
+    top: 225px;
+  }
+  .featured button > span {
+    padding: 17px;
+  }
+  .featured button > span > span:first-child {
+    font-size: 21px;
+  }
+  .featured button > span > span:nth-child(2) {
+    font-size: 12px;
+  }
+  .deskCaption {
+    left: 8px;
+    right: auto;
+    bottom: -5px;
+    font-size: 8px;
+  }
+  .floatingStar {
+    left: auto;
+    right: 18px;
+    top: 184px;
+    font-size: 34px;
+  }
+  .workGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .workGrid > button:first-child {
+    grid-column: auto;
+  }
+  .section-heading {
+    align-items: flex-end;
+  }
+  .work .section-title {
+    max-width: 15ch;
+  }
+  .little {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .littleIntro > p:last-child {
+    max-width: 40ch;
+  }
+}

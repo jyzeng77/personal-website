@@ -1,7 +1,7 @@
 import { useState } from "react";
 import type { Project } from "./content/site";
 import { ProjectDialog } from "./components/ProjectDialog";
-import Foundation from "./layouts/Foundation";
+import InterfaceCollage from "./layouts/InterfaceCollage";
 
 export default function App() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -11,7 +11,7 @@ export default function App() {
       <a className="skip-link" href="#main">
         Skip to content
       </a>
-      <Foundation onSelect={setSelectedProject} />
+      <InterfaceCollage onSelect={setSelectedProject} />
       <ProjectDialog
         project={selectedProject}
         onClose={() => setSelectedProject(null)}

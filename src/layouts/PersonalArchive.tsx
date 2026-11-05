@@ -43,18 +43,11 @@ export default function PersonalArchive({
                   </ActionLink>
                   <a href={site.resume}>résumé ↗</a>
                 </div>
-                <p className={styles.marginNote}>
-                  <span aria-hidden="true">↳</span> work, interests, and the
-                  discoveries in between.
-                </p>
               </div>
               <div className={styles.photoCorner}>
                 <PhotoCard photo={photos.city} className={styles.city} />
                 <span className={styles.star} aria-hidden="true">
                   ✳
-                </span>
-                <span className={styles.photoNote} aria-hidden="true">
-                  a different point of view ↗
                 </span>
               </div>
             </section>

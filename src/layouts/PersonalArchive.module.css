@@ -19,7 +19,7 @@
 }
 .skyMargin {
   position: relative;
-  height: 66px;
+  height: 50px;
   overflow: hidden;
   background: #c8d8e3;
 }
@@ -85,11 +85,11 @@
   display: grid;
   grid-template-columns: 1fr 260px;
   gap: 30px;
-  padding: 64px 0 60px;
+  padding: 40px 0 40px;
 }
 .intro h1 {
   margin: 23px 0 25px;
-  font-size: clamp(50px, 6.3vw, 80px);
+  font-size: clamp(50px, 6.3vw, 72px);
   font-weight: 500;
   letter-spacing: -0.065em;
   line-height: 1.12;
@@ -108,7 +108,7 @@
   transform: rotate(-2deg);
   background: #b4cbdab8;
 }
-.intro > p:not(.eyebrow):not(.marginNote) {
+.intro > p:not(:global(.eyebrow)) {
   max-width: 38ch;
   font-size: 15px;
   color: #435968;
@@ -126,18 +126,6 @@
 .actions > a:last-child {
   font-size: 12px;
   color: var(--muted);
-}
-.marginNote {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 32px;
-  font: 10px/1.6 var(--mono);
-  color: var(--muted);
-}
-.marginNote span {
-  font-size: 22px;
-  color: #6b8190;
 }
 .photoCorner {
   position: relative;
@@ -168,14 +156,6 @@
   font-weight: 300;
   color: #7492aa;
   transform: rotate(-9deg);
-}
-.photoNote {
-  position: absolute;
-  bottom: 9px;
-  left: 0;
-  font: 9px var(--mono);
-  color: #697d8b;
-  transform: rotate(-4deg);
 }
 .desk {
   display: grid;
@@ -310,7 +290,7 @@
   background: #dbd0b59c;
   transform: rotate(-3deg);
 }
-.elsewhere > .eyebrow {
+.elsewhere > :global(.eyebrow) {
   font-size: 9px;
 }
 .elsewhere h2 {
@@ -481,11 +461,8 @@
   .photoCorner {
     display: none;
   }
-  .intro > p:not(.eyebrow):not(.marginNote) {
+  .intro > p:not(:global(.eyebrow)) {
     max-width: 42ch;
-  }
-  .marginNote {
-    margin-top: 23px;
   }
   .desk {
     grid-template-columns: 1fr;
@@ -549,7 +526,7 @@
   .hero {
     padding: 36px 0 35px;
   }
-  .intro > .eyebrow {
+  .intro > :global(.eyebrow) {
     font-size: 9px;
     letter-spacing: 0.06em;
   }
@@ -560,7 +537,7 @@
   .intro h1 > span::before {
     inset: 8px -5px 3px;
   }
-  .intro > p:not(.eyebrow):not(.marginNote) {
+  .intro > p:not(:global(.eyebrow)) {
     font-size: 14px;
     max-width: 31ch;
   }
@@ -573,10 +550,6 @@
   }
   .actions > a:last-child {
     font-size: 11px;
-  }
-  .marginNote {
-    font-size: 9px;
-    max-width: 33ch;
   }
   .folderTab {
     width: 205px;
@@ -631,7 +604,19 @@
   .workShelf {
     padding-top: 20px;
   }
-  .workShelf .section-title {
+  .workShelf :global(.section-title) {
     max-width: 13ch;
+  }
+}
+
+.page > header {
+  min-height: 88px;
+}
+.folderBody > button > div {
+  aspect-ratio: 2.35;
+}
+@media (max-width: 500px) {
+  .folderBody > button > div {
+    aspect-ratio: 1.8;
   }
 }

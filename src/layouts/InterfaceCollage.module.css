@@ -19,7 +19,7 @@
   position: relative;
   z-index: 2;
 }
-.intro > .eyebrow {
+.intro > :global(.eyebrow) {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -496,10 +496,10 @@
   .workGrid > button:first-child {
     grid-column: auto;
   }
-  .section-heading {
+  :global(.section-heading) {
     align-items: flex-end;
   }
-  .work .section-title {
+  .work :global(.section-title) {
     max-width: 15ch;
   }
   .little {

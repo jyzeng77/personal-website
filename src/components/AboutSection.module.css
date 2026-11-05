@@ -12,7 +12,7 @@
   line-height: 1.15;
   margin-top: 17px;
 }
-.about > div > p:not(.eyebrow) {
+.about > div > p:not(:global(.eyebrow)) {
   font-size: 14px;
   color: var(--muted);
   max-width: 52ch;

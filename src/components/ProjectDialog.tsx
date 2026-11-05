@@ -35,6 +35,23 @@ export function ProjectDialog({
       className={styles.dialog}
       aria-labelledby={titleId}
       onClose={onClose}
+      onKeyDown={(event) => {
+        if (event.key !== "Tab") return;
+        const controls = Array.from(
+          event.currentTarget.querySelectorAll<HTMLElement>(
+            "button:not([disabled]), a[href]",
+          ),
+        ).filter((element) => element.getClientRects().length > 0);
+        if (!controls.length) return;
+        const currentIndex = controls.indexOf(
+          document.activeElement as HTMLElement,
+        );
+        const nextIndex =
+          (currentIndex + (event.shiftKey ? -1 : 1) + controls.length) %
+          controls.length;
+        event.preventDefault();
+        controls[nextIndex].focus();
+      }}
       onClick={(event) => {
         if (event.target === event.currentTarget) onClose();
       }}

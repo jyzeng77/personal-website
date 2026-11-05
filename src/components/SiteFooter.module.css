@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-end;
+  border-top: 1px solid var(--line);
+  padding: 32px 0 35px;
+}
+.footer > div > a {
+  font-size: 13px;
+  text-decoration: none;
+}
+.footer p {
+  font: 10px/1.6 var(--mono);
+  color: var(--muted);
+  margin-top: 12px;
+}
+.secret {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+  padding: 5px;
+  color: #53748b;
+  text-align: left;
+}
+.secret span {
+  max-width: 21ch;
+  font: 10px/1.5 var(--mono);
+}
+.secret:hover svg {
+  transform: rotate(-8deg);
+}
+@media (max-width: 600px) {
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 24px;
+  }
+}

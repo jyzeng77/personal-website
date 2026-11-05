@@ -1,7 +1,7 @@
 ---
 title: Personal Website — Creative Direction and Conversation Record
 document_type: design_brief
-version: '1.1'
+version: '1.2'
 last_updated: '2026-11-05'
 status: exploratory_direction_not_final_spec
 format_notes: 'Plain Markdown with YAML front matter; designed for both human reading and straightforward machine parsing.'
@@ -12,7 +12,7 @@ source: 'Collaborative website-aesthetic discussion, user-provided Pinterest scr
 
 ## 0. How to use this document
 
-This is the working source of truth for the website's *aesthetic, emotional direction, interaction philosophy, and portfolio priorities*. It preserves the way the idea evolved, including corrections and tensions that should **not** be flattened into a generic style guide.
+This records the original discussion of the website's *aesthetic, emotional direction, interaction philosophy, and portfolio priorities*. Later choices, including the two preferred concepts and implementation stack, are recorded in [current direction](direction.md). It preserves the way the idea evolved, including corrections and tensions that should **not** be flattened into a generic style guide.
 
 **Evidence labels used below:**
 - **[CONFIRMED]** — Directly expressed, chosen, or clarified by the site owner.
@@ -21,9 +21,9 @@ This is the working source of truth for the website's *aesthetic, emotional dire
 - **[REJECTED / LIMITED]** — Explicitly unwanted, or acceptable only within stated boundaries.
 - **[OPEN]** — Not decided; do not invent certainty.
 
-The owner has not approved a final layout, palette, font, site name, photo collection, or implementation architecture. The sample copy, fictional projects, and other contents of the concept drafts are **illustrative placeholders, not biographical facts**.
+At the end of the original aesthetic discussion, the owner had not approved a final layout, palette, font, site name, photo collection, or implementation architecture. The current-direction document supersedes this record where later decisions have been made. The sample copy, fictional projects, and other contents of the concept drafts are **illustrative placeholders, not biographical facts**.
 
-**Reference-package review (2026-11-05):** The original ZIP’s eight Pinterest crops were misaligned with their captions. Use the six complete screenshots and full-resolution generated mockup in the [reviewed gallery](reference-gallery.md), with [source records](references/manifest.json). The creative direction remains exploratory; the asset review does not approve any concept as final. See the [review record](review-notes.md) for scope and limitations.
+**Reference-package review (2026-11-05):** The original ZIP’s eight Pinterest crops were misaligned with their captions. Use the six complete screenshots and full-resolution generated mockup in the [reviewed gallery](../reference-gallery.md), with [source records](../references/manifest.json). The creative direction remains exploratory; the asset review does not approve any concept as final. See the [review record](../archive/reference-package-review.md) for scope and limitations.
 
 ## 1. Executive creative direction
 

@@ -1,24 +1,24 @@
-# Personal website design documentation
+# Website documentation
 
-Start with the [creative brief](personal-website-creative-brief.md), then the [visual gallery](reference-gallery.md). No final layout, font, palette, or homepage concept has been selected.
+Start with [current direction](design/direction.md) for decisions, then the [visual gallery](reference-gallery.md) for the images. For working on the code, read the [architecture guide](development/architecture.md) and [branch guide](development/branches.md).
 
-## Contents
+## Design
 
-```text
-docs/
-├── README.md
-├── personal-website-creative-brief.md
-├── reference-gallery.md
-├── review-notes.md
-└── references/
-    ├── manifest.json
-    ├── pinterest-01.png … pinterest-06.png
-    └── homepage-concepts.png
-```
+- [Current direction](design/direction.md): approved choices, the two preferred concepts, and open questions.
+- [Original creative brief](design/creative-brief.md): detailed conversation record, including corrections and proposals. Later decisions live in current direction.
+- [Visual reference gallery](reference-gallery.md): six complete Pinterest screenshots and the generated three-concept mockup.
+- [Website assets](design/assets.md): atmosphere photos, graphics, credits, and reuse information.
+- [Content provenance](design/content.md): project sources and case-study details still needing Jerry's input.
 
-- [Creative brief](personal-website-creative-brief.md): preferences, corrections, constraints, proposals, and open decisions.
-- [Gallery](reference-gallery.md): all six complete Pinterest screenshots, focused visual studies, and the three-concept comparison.
-- [Review record](review-notes.md): findings, changes, validation, and limitations.
-- [Source manifest](references/manifest.json): stable IDs, paths, dimensions, sizes, checksums, provenance, and attribution status.
+## Development
 
-The seven PNGs preserve the downloaded images without cropping, resizing, upscaling, or generative changes. Screenshot numbers follow attachment order in the source chat. They are reference material, not production assets. Individual creators, pin URLs, and reuse permissions are unverified; inclusion here does not grant a license to reuse third-party artwork on the website.
+- [Architecture and editing](development/architecture.md): stack, component boundaries, file map, commands, and hosting notes.
+- [Branches, without the mystery](development/branches.md): how the foundation and two experiments share changes.
+- [Agent guidance](../AGENTS.md): short, durable instructions for coding agents.
+
+## Evidence and history
+
+- [Reference manifest](references/manifest.json): IDs, original-image paths, dimensions, sizes, checksums, and attribution status.
+- [Reference package review](archive/reference-package-review.md): historical defects in the original ZIP and their corrections.
+
+`references/` contains all seven original PNG images without transformations. These are design-study material, not production assets. Individual Pinterest creators, pin URLs, and reuse licenses remain unverified. The website uses separately sourced photos from `public/images/`, documented above.

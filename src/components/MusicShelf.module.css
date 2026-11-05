@@ -1,0 +1,68 @@
+.shelf {
+  background: #fdfbf6;
+  border: 1px solid #c8cecf;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px #263d4c0a;
+  overflow: hidden;
+}
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  background: transparent;
+  width: 100%;
+  text-align: left;
+  min-height: 80px;
+}
+.toggle:hover {
+  background: #e8edf27a;
+}
+.cover {
+  display: grid;
+  place-items: center;
+  width: 55px;
+  height: 55px;
+  flex-shrink: 0;
+  color: #3a637f;
+  background: linear-gradient(135deg, #b4cbdc, #e4e5dc);
+  border: 1px solid #b6c9d2;
+  border-radius: 4px;
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+.label strong {
+  font-size: 13px;
+  font-weight: 500;
+}
+.label > span:last-child {
+  font-size: 10px;
+  color: var(--muted);
+}
+.label .eyebrow {
+  font-size: 9px;
+}
+.artists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0 16px 16px;
+}
+.artists a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 35px;
+  font-size: 11px;
+  border: 1px solid var(--line);
+  padding: 8px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.artists a:hover {
+  background: var(--blue-pale);
+}

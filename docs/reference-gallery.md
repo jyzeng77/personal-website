@@ -1,6 +1,8 @@
 # Visual reference gallery
 
-This gallery accompanies the [creative brief](personal-website-creative-brief.md). It preserves **all six uploaded Pinterest screenshots** and the **original generated homepage comparison**, replacing the misaligned crops in the prepared ZIP. Click an image for full resolution. Locations below refer to the image as displayed, left to right.
+This gallery accompanies the [creative brief](design/creative-brief.md). It preserves **all six uploaded Pinterest screenshots** and the **original generated homepage comparison**, replacing the misaligned crops in the prepared ZIP. Click an image for full resolution. Locations below refer to the image as displayed, left to right.
+
+**Current preference:** Jerry prefers A (Interface Collage) and C (Personal Archive), with a likely combination. See [current direction](design/direction.md) for decisions made after these mockups.
 
 ## Sources and interpretation
 
@@ -74,7 +76,7 @@ Generated in the source ChatGPT conversation in response to “can you create a 
 | B — Photographic Journal | Intimacy, dusk light, quiet type, photographic warmth | Large hero can crowd out work or become too minimal |
 | C — Personal Archive | Discoverable collections, imperfect placement, playful composition | Tape, CDs, players, and decorative scraps can feel manufactured |
 
-No concept has been selected. Project titles, dates, locations, labels, and personal notes are illustrative placeholders, not verified biographical facts. The [brief](personal-website-creative-brief.md) records the tradeoffs and proposed synthesis.
+No concept has been selected. Project titles, dates, locations, labels, and personal notes are illustrative placeholders, not verified biographical facts. The [brief](design/creative-brief.md) records the tradeoffs and proposed synthesis.
 
 ## What to carry into the website
 
@@ -86,4 +88,4 @@ No concept has been selected. Project titles, dates, locations, labels, and pers
 
 ## Reuse limits
 
-Pinterest imagery remains third-party reference material with unverified creators, pin URLs, and licenses. These files are not a production asset library. The generated comparison does not clear recognizable third-party motifs it depicts. Preserve attribution status if files move or are reused. See the [review record](review-notes.md) for defects and verification scope.
+Pinterest imagery remains third-party reference material with unverified creators, pin URLs, and licenses. These files are not a production asset library. The generated comparison does not clear recognizable third-party motifs it depicts. Preserve attribution status if files move or are reused. See the [review record](archive/reference-package-review.md) for defects and verification scope.

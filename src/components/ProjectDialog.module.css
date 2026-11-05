@@ -1,0 +1,64 @@
+.dialog {
+  width: min(650px, calc(100% - 32px));
+  padding: 0;
+  border: 1px solid #a9b7bf;
+  border-radius: 14px;
+  color: var(--ink);
+  background: var(--paper-light);
+  box-shadow: 0 30px 120px #1a304455;
+  max-height: calc(100dvh - 48px);
+}
+.dialog::backdrop {
+  background: #26384770;
+  backdrop-filter: blur(4px);
+}
+.visual {
+  position: relative;
+}
+.close {
+  position: absolute !important;
+  right: 14px;
+  top: 14px;
+  padding: 10px !important;
+  border-radius: 50% !important;
+}
+.content {
+  padding: 30px 35px 35px;
+}
+.content h2 {
+  margin: 10px 0 15px;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+.content > p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 14px;
+}
+.content ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 22px 0;
+  list-style: none;
+}
+.content li {
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font: 11px var(--mono);
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+@media (max-width: 500px) {
+  .content {
+    padding: 25px;
+  }
+  .content h2 {
+    font-size: 27px;
+  }
+}

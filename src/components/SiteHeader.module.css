@@ -1,0 +1,88 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  min-height: 100px;
+  border-bottom: 1px solid #b7c4ca75;
+}
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 25px;
+  font-weight: 650;
+  letter-spacing: -0.07em;
+  text-decoration: none;
+}
+.wordmark span {
+  font-size: 19px;
+  font-weight: 400;
+  color: #718ca5;
+}
+.header nav {
+  display: flex;
+  gap: 30px;
+  margin-left: auto;
+}
+.header nav a {
+  font-size: 13px;
+  text-decoration: none;
+  padding: 12px 0;
+}
+.header nav a:hover {
+  text-decoration: underline;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 1px solid #bdc8cc;
+  border-radius: 20px;
+}
+.contact:hover {
+  background: #e3eaf0;
+}
+.paper {
+  padding: 10px 18px;
+  background: #e8dfca;
+  border-radius: 1px;
+  transform: rotate(-3deg);
+  font: 14px var(--mono);
+  letter-spacing: -0.04em;
+  box-shadow: 0 1px 3px #31465312;
+}
+@media (max-width: 680px) {
+  .header {
+    min-height: 85px;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+  .header nav {
+    gap: 17px;
+  }
+  .header nav a {
+    font-size: 12px;
+  }
+  .contact {
+    display: none;
+  }
+  .wordmark {
+    font-size: 23px;
+  }
+  .paper {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+@media (max-width: 365px) {
+  .header nav {
+    gap: 12px;
+  }
+  .header nav a {
+    font-size: 11px;
+  }
+}

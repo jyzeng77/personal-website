@@ -1,0 +1,50 @@
+.action {
+  display: inline-flex;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 11px 18px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--paper-light);
+  color: var(--ink);
+  font-size: 13px;
+  text-decoration: none;
+  transition:
+    background 0.16s,
+    transform 0.16s,
+    box-shadow 0.16s;
+}
+.action:hover {
+  background: var(--blue-pale);
+  box-shadow: 0 3px 8px #273d4c0d;
+}
+.action:active {
+  transform: translateY(1px);
+}
+.action::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: var(--ripple-x, 50%);
+  top: var(--ripple-y, 50%);
+  width: 180%;
+  aspect-ratio: 1;
+  background: #7a9fbc40;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition:
+    transform 0.35s ease-out,
+    opacity 0.5s;
+  pointer-events: none;
+}
+.action:active::after {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  transition: transform 0.2s ease-out;
+}

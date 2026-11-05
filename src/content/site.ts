@@ -69,7 +69,7 @@ export const photos = {
   },
   city: {
     src: "./images/city-at-dusk.jpg",
-    alt: "New York buildings catching the last warm light of the day",
+    alt: "Brooklyn Bridge and the New York skyline viewed through a fence at sunset",
     caption: "somewhere between day & night",
     credit: "Matteo Catanese",
     href: "https://unsplash.com/photos/city-buildings-under-sunset-ZVolF5GVmlw",

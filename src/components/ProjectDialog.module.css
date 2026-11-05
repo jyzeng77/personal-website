@@ -31,7 +31,7 @@
   font-weight: 500;
   letter-spacing: -0.04em;
 }
-.content > p:not(.eyebrow) {
+.content > p:not(:global(.eyebrow)) {
   color: var(--muted);
   font-size: 14px;
 }
